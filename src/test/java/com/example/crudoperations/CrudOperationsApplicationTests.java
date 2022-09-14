@@ -35,14 +35,14 @@ class CrudOperationsApplicationTests {
 	void getEmpdataTest() throws Exception {
 		//EmpDataModel empDataModel = new EmpDataModel("ff","ln","tel","21)136-14","5632 Lacus Ct","Moundridge",22034.0);
 		//assertThat(empController.getemployeedatabyId(1)).isNotNull();
-		HttpStatus val = HttpStatus.valueOf(empController.getemployeedatabyId(7).getStatusCodeValue());
+		HttpStatus val = HttpStatus.valueOf(empController.getemployeedatabyId(70).getStatusCodeValue());
 		assertThat(val).isEqualTo(OK);
 	}
 	@Test
 	void DeleteEmpdataTest() throws Exception {
 		//EmpDataModel empDataModel = new EmpDataModel("ff","ln","tel","21)136-14","5632 Lacus Ct","Moundridge",22034.0);
 		//assertThat(empController.getemployeedatabyId(1)).isNotNull();
-		HttpStatus val = HttpStatus.valueOf(empController.deleteEmpdata(6).getStatusCodeValue());
+		HttpStatus val = HttpStatus.valueOf(empController.deleteEmpdata(71).getStatusCodeValue());
 		assertThat(val).isEqualTo(OK);
 	}
 
